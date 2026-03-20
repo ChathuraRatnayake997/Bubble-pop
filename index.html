@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Pop Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Bubble Pop Game</h1>
+        <h2 id="question">Question will appear here</h2>
+        <div class="bubble-container" id="bubbleContainer">
+            <!-- Bubbles will be generated here -->
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-content" id="popupContent">
+                <h3 id="popupMessage">Message</h3>
+                <button id="nextButton">Next Question</button>
+            </div>
+        </div>
+        <div class="game-over" id="gameOver">
+            <h2>Game Over!</h2>
+            <p>You've completed all questions.</p>
+            <button id="restartButton">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

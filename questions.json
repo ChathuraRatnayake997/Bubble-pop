@@ -1,0 +1,59 @@
+{
+  "mcqs": [
+    {
+      "id": 1,
+      "question_en": "What is the chemical formula of water?",
+      "options": [
+        "CO₂",
+        "H₂O",
+        "O₂",
+        "NaCl"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 2,
+      "question_en": "What is the symbol of the element oxygen?",
+      "options": [
+        "O",
+        "Ox",
+        "Og",
+        "On"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 3,
+      "question_en": "Which of the following is a metal?",
+      "options": [
+        "Oxygen",
+        "Carbon",
+        "Sodium",
+        "Nitrogen"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 4,
+      "question_en": "What happens when sodium is added to water?",
+      "options": [
+        "Nothing happens",
+        "It gets cold",
+        "A reaction occurs",
+        "It turns into a stone"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 5,
+      "question_en": "What is an acid?",
+      "options": [
+        "A substance with a sour taste",
+        "A type of salt",
+        "Only water",
+        "A substance that donates H⁺ ions"
+      ],
+      "answer_index": 3
+    }
+  ]
+}
