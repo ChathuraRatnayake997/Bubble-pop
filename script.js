@@ -47,14 +47,10 @@ async function loadQuestions() {
 }
 
 let currentQuestionIndex = 0;
+let questionElement, bubbleContainer, popup, popupMessage, nextButton, gameOver;
 
-// DOM元素
-const questionElement = document.getElementById('question');
-const bubbleContainer = document.getElementById('bubbleContainer');
-const popup = document.getElementById('popup');
-const popupMessage = document.getElementById('popupMessage');
-const nextButton = document.getElementById('nextButton');
-const gameOver = document.getElementById('gameOver');
+// 动画循环ID
+let animationInterval = null;
 
 // 初始化游戏
 function initGame() {
@@ -69,9 +65,6 @@ function loadQuestion(index) {
     questionElement.textContent = question.question;
     generateBubbles(question.options);
 }
-
-// 动画循环ID
-let animationInterval = null;
 
 // 生成泡泡
 function generateBubbles(options) {
@@ -309,7 +302,7 @@ function showGameOver() {
 // 重新开始游戏
 function restartGame() {
     // Show bubble container again
-    bubbleContainer.style.display = 'grid';
+    bubbleContainer.style.display = 'block';
     
     // Remove restart button if it exists
     const restartButton = document.getElementById('restartButton');
@@ -320,8 +313,17 @@ function restartGame() {
     initGame();
 }
 
-// 事件监听器
-nextButton.addEventListener('click', nextQuestion);
-
 // 初始化游戏
-loadQuestions();
+document.addEventListener('DOMContentLoaded', function() {
+    // DOM元素
+    questionElement = document.getElementById('question');
+    bubbleContainer = document.getElementById('bubbleContainer');
+    popup = document.getElementById('popup');
+    popupMessage = document.getElementById('popupMessage');
+    nextButton = document.getElementById('nextButton');
+    gameOver = document.getElementById('gameOver');
+    
+    // 事件监听器
+    nextButton.addEventListener('click', nextQuestion);
+    loadQuestions();
+});
