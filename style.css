@@ -1,5 +1,5 @@
 /* Import common styles */
-@import url('../common.css');
+@import url('common.css');
 
 /* Bubble Pop specific styles */
 #question {

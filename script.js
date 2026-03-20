@@ -4,7 +4,7 @@ let questions = [];
 // 从JSON文件加载问题
 async function loadQuestions() {
     try {
-        const response = await fetch('../questions.json');
+        const response = await fetch('questions.json');
         const data = await response.json();
         questions = data.mcqs.map(mcq => ({
             question: mcq.question_en,
